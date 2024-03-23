@@ -1,10 +1,13 @@
 // prompt the user to input the marks
 const prompt = require("prompt-sync")({sigint:true});
 
+let marks = prompt("What's your marks:")
+// initialize grade.
+let grade = "not yet graded"
+
+// alert the user on the required range of input.
 alert = "Marks should be between 0 to 100. Not anything above that!"
 
-let marks = prompt("What's your marks:")
-let grade = "not yet graded"
 
 
 // define grades from the given marks using IF
