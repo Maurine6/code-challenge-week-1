@@ -33,7 +33,5 @@ alert = "Marks should be between 0 to 100. Not anything above that!"
         // any marks below 40, that is from 0 are graded at E.
         grade = "E";
     }
-    else;
-    alert ="Fail";
 
     console.log(grade);
