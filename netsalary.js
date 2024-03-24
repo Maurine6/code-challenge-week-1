@@ -55,12 +55,12 @@ function nhif(){
 
 
 
-// initialize nssf which is 6% of the basic salary.
+// calculate nssf which is 6% of the basic salary.
 const nssf = basicSalary*0.06;
 console.log(`nssf:${nssf}`);
 
 
-// initialize gross salary also known as, grosspay. Its usually basic salary plus allowances but in this case we do not have allowances.
+// calculate gross salary also known as, grosspay. Its usually basic salary plus allowances but in this case we do not have allowances.
 const grossSalary = (basicSalary);
 console.log(`Grosspay:${grossSalary}`);
 
