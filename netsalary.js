@@ -4,7 +4,7 @@ const prompt = require("prompt-sync")({sigint:true});
 let basicSalary = prompt("Please Input your Basic Salary:")
 
 // write a function to calculate paye based on the basic salary.
-function payee(){
+function paye(){
     if(basicSalary<=24000){
         return (basicSalary)*0.1;
     }else if(basicSalary<=32333){
@@ -55,7 +55,7 @@ function nhif(){
 
 
 
-// initialize nssf which is 2% of the basic salary.
+// initialize nssf which is 6% of the basic salary.
 const nssf = basicSalary*0.06;
 console.log(`nssf:${nssf}`);
 
@@ -69,7 +69,7 @@ const houseLevy = grossSalary*0.015;
 console.log(`Houselevy:${houseLevy}`);
 
 // Calculate deductions.
-const deductions = houseLevy + nssf + payee(); + nhif();
+const deductions = houseLevy + nssf + paye(); + nhif();
 console.log(`Deductions:${deductions}`);
 
 // calculate the respective netpay.
